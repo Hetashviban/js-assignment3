@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Custom Smoothie Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Welcome to Aloha Smoothie</h1>
+    <h2>Order Your Smoothie</h2>
+    <h2>Smoothie Lists</h2>
+
+    <div class="smoothie-lists">
+        <div class="smoothie-item">
+            <h3>Strawberry and Banana Smoothie</h3>
+            <img src="img/strawberry-banana-smoothie-recipe-square.jpeg" alt="Strawberry and Banana Smoothie">
+        </div>
+        <div class="smoothie-item">
+            <h3>Peanut Butter and Banana Smoothie</h3>
+            <img src="img/IMG_6592.jpg" alt="Peanut Butter and Banana Smoothie">
+        </div>
+        <div class="smoothie-item">
+            <h3>Mixed Berries Smoothie</h3>
+            <img src="img/triple-berry-smoothie-feat-min.jpg" alt="Mixed Berries Smoothie">
+        </div>
+        <div class="smoothie-item">
+            <h3>Green Kale & Spinach Smoothie</h3>
+            <img src="img/kale-smoothie-6-2.jpg.webp" alt="Green Kale & Spinach Smoothie">
+        </div>
+        <div class="smoothie-item">
+            <h3>Chocoholic Smoothie</h3>
+            <img src="img/Chocolate-Smoothie-Recipe-jpg.webp" alt="Chocoholic Smoothie">
+        </div>
+        <div class="smoothie-item">
+            <h3>Build your own Smoothie</h3>
+            <img src="img/BuildYourOwn.jpeg" alt="Build your own Smoothie">
+        </div>
+    </div>
+
+
+    <h2>Shop the smoothie you would like to buy:</h2>
+
+    <form id="customSmoothieForm">
+        <label for="menu">Smoothie Menu:</label>
+        <select id="menu" name="menu"></select>
+        <label for="base">Smoothie Base:</label>
+        <select id="base" name="base"></select>
+
+        <label for="fruit">Fruit:</label>
+
+        <fieldset>
+            <legend>Fruits:</legend>
+            <div id="fruits"></div>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Vegetable:</legend>
+            <div id="Vegetable"></div>
+        </fieldset>
+
+
+
+        <fieldset>
+            <legend>Extras:</legend>
+            <div id="extras"></div>
+        </fieldset>
+
+
+
+        <button type="button" id="generateButton">Generate Smoothie</button>
+    </form>
+
+    <div id="output">
+        <h2>Your Smoothie</h2>
+        <p id="smoothieDescription"></p>
+    </div>
+
+    <div id="bill">
+        <div>
+            <h2>Your Bill</h2>
+            <p id="billDetails"></p>
+        </div>
+        <img id="smoothieImage" src="" alt="Your Smoothie" style="display:none;">
+    </div>
+
+    <script src="smoothie.js"></script>
+</body>
+
+</html>
